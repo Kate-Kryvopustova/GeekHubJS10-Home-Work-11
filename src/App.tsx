@@ -11,7 +11,7 @@ function App() {
 
   const onToggle = (id: string) => dispatch(toggleTodo(id));
   const onDelete = (id: string) => dispatch(deleteTodo(id));
-  
+
   return (
     <div id='main'>
       <h1 className='title'>Todo list</h1>
