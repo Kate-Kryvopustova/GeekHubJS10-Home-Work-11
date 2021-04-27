@@ -13,16 +13,16 @@ function TodoListItem({ item, onClick, deleteTodo }: ITodos) {
     console.log(deleteTodo(item.id))
   }
   return (
-    <li className="list-group-item" onClick={onClick}>
-      <div className={todoClass}>
+    <li className='list-group-item' onClick={ onClick }>
+      <div className={ todoClass }>
         {
           isDoneItem
             ? <Check2 />
             : <Circle />
         }
-        <span style={svgStyle}>{item.text}</span>
+        <span style={ svgStyle }>{item.text}</span>
 
-        <button className='close' onClick={onDelete}>&times;</button>
+        <button className='close' onClick={ onDelete }>&times;</button>
       </div>
     </li>
   )

@@ -22,17 +22,17 @@ function AddTodo() {
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={ handleSubmit }
       className='form-inline'
     >
       <input
         className='form-control'
         type='text'
         placeholder='add a new task...'
-        value={item}
-        onChange={handleChange}
+        value={ item }
+        onChange={ handleChange }
       />
-      <Button type="submit" variant='outline-secondary'>Add task</Button>
+      <Button type='submit' variant='outline-secondary'>Add task</Button>
     </form>
   )
 }

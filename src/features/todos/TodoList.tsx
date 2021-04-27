@@ -13,10 +13,10 @@ function TodoList({ todos, toggleTodo, deleteTodo }: ITodoList) {
     todos.forEach((item: IItem) => {
       const listItem = (
         <TodoListItem
-          key={item.id}
-          item={item}
-          onClick={() => toggleTodo(item.id)}
-          deleteTodo={deleteTodo}
+          key={ item.id }
+          item={ item }
+          onClick={ () => toggleTodo(item.id) }
+          deleteTodo={ deleteTodo }
         />
       );
 

@@ -17,9 +17,9 @@ function App() {
       <h1 className='title'>Todo list</h1>
       <AddTodo />
       <TodoList
-        todos={todos}
-        toggleTodo={onToggle}
-        deleteTodo={onDelete}
+        todos={ todos }
+        toggleTodo={ onToggle }
+        deleteTodo={ onDelete }
       />
     </div>
   );
