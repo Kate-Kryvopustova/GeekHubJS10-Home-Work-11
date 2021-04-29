@@ -1,10 +1,10 @@
 import React, { useState, } from "react";
 import { useDispatch } from 'react-redux';
-import { addTodo } from "./todoSlice";
+import { addTodo } from "../../store/todoSlice";
 import { Button } from 'react-bootstrap';
 import { IOnChangeInput, IHandleSubmit } from '../../interfaces/interfaces';
 
-function AddTodo() {
+function AddTodo(): JSX.Element {
   const [item, setItem] = useState<string>('');
 
   const dispatch = useDispatch();

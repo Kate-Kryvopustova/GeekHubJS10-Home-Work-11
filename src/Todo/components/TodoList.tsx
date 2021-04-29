@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { ITodoList, IVisibilityList, IItem } from '../../interfaces/interfaces';
 
 
-function TodoList({ todos, toggleTodo, deleteTodo }: ITodoList) {
+function TodoList({ todos, toggleTodo, deleteTodo }: ITodoList): JSX.Element {
 
   const { activeList, completeList }: IVisibilityList = useMemo(() => {
     const activeList: Array<JSX.Element> = [];

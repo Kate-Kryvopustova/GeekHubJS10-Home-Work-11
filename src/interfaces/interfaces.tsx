@@ -40,3 +40,9 @@ export interface IItem {
   text: string,
   isDone: boolean
 }
+
+export type ITodoArray = IItem[];
+
+export type IState =  {
+  todos: IItem[]
+}

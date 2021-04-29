@@ -22,6 +22,6 @@ module.exports = {
   ],
   rules: {
     'react/jsx-curly-spacing': ['error', 'always'],
-    'jsx-quotes': ['error', 'prefer-single'],
+    'jsx-quotes': ['error', 'prefer-single']
   }
 };

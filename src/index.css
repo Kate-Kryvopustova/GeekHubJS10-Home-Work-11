@@ -23,7 +23,11 @@
 
 .list-group {
   width: 600px;
-} 
+}
+
+.list-group-item {
+  cursor: pointer;
+}
 
 li:hover {
   background-color: #F5F5F5;

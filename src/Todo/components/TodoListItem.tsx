@@ -2,7 +2,7 @@ import React from 'react';
 import { Check2, Circle } from 'react-bootstrap-icons';
 import { ITodos, IClickDeleteItem } from '../../interfaces/interfaces';
 
-function TodoListItem({ item, onClick, deleteTodo }: ITodos) {
+function TodoListItem({ item, onClick, deleteTodo }: ITodos): JSX.Element {
   const todoClass = item.isDone ? 'done' : 'undone';
   const isDoneItem = item.isDone;
   const svgStyle = { marginLeft: 15 };
@@ -10,7 +10,6 @@ function TodoListItem({ item, onClick, deleteTodo }: ITodos) {
   const onDelete: IClickDeleteItem = (event) => {
     event.stopPropagation();
     deleteTodo(item.id);
-    console.log(deleteTodo(item.id))
   }
   return (
     <li className='list-group-item' onClick={ onClick }>
